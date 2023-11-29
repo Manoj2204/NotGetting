@@ -1,7 +1,7 @@
 package test;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class GetPageTitleTest 
@@ -10,7 +10,7 @@ public class GetPageTitleTest
 	public void test()
 
 	{
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
 		String title = driver.getTitle();
